@@ -19,6 +19,7 @@ ChallengeModes.Enable = 1
 #    The following challenge modes are available:
 #        Hardcore - Players who die are permanently ghosts and can never be revived.
 #        SemiHardcore - Players who die lose all worn equipment and carried gold. Cannot be enabled at the same time as Hardcore.
+#        LoseXP - Players who die lose a percentage of their XP.
 #        SelfCrafted - Players can only wear equipment that they have crafted.
 #        ItemQualityLevel - Players can only wear equipment that is of Normal or Poor quality
 #        SlowXpGain - Players receive 0.5x the normal amount of XP.
@@ -30,6 +31,8 @@ ChallengeModes.Enable = 1
 #    The options for each mode follow the same format. "<Challenge>" is replaced with the name of the challenge, such as Hardcore. The following options are possible:
 #    <Challenge>.Enable = 1
 #        If set to 0, this challenge option will not be selectable at the challenge modes object.
+#    <Challenge>.Percentage = ""
+		(Only for LoseXP challenge). The percentage of XP to lose when dying, where 0.5 is half a level and 1 is a whole level.
 #    <Challenge>.TitleRewards = ""
 #        Rewards titles for players when reaching the given levels with the challenge enabled.
 #        The IDs used are from CharTitles.dbc. The format is the level followed by the title ID, separated by commas.
@@ -76,6 +79,16 @@ SemiHardcore.ItemRewards = ""
 SemiHardcore.ItemRewardAmount = 1
 SemiHardcore.DisableLevel = 0
 SemiHardcore.AchievementReward = ""
+
+LoseXP.Enable = 1
+LoseXP.Percentage = 0.05
+LoseXP.TitleRewards = ""
+LoseXP.XPMultiplier = 1
+LoseXP.TalentRewards = ""
+LoseXP.ItemRewards = ""
+LoseXP.ItemRewardAmount = 1
+LoseXP.DisableLevel = 0
+LoseXP.AchievementReward = ""
 
 SelfCrafted.Enable = 1
 SelfCrafted.TitleRewards = ""
