@@ -32,7 +32,7 @@ ChallengeModes.Enable = 1
 #    <Challenge>.Enable = 1
 #        If set to 0, this challenge option will not be selectable at the challenge modes object.
 #    <Challenge>.Percentage = ""
-		(Only for LoseXP challenge). The percentage of XP to lose when dying, where 0.5 is half a level and 1 is a whole level.
+#		(Only for LoseXP challenge). The percentage of XP to lose when dying, where 0.5 is half a level and 1 is a whole level.
 #    <Challenge>.TitleRewards = ""
 #        Rewards titles for players when reaching the given levels with the challenge enabled.
 #        The IDs used are from CharTitles.dbc. The format is the level followed by the title ID, separated by commas.
